@@ -13,7 +13,7 @@ void setup() {
   Serial.begin(115200);
 
   // Initialize I2C with your custom pins
-  Wire.begin(8, 9); // SDA = GPIO8, SCL = GPIO9
+  Wire.begin(8, 7); // SDA = GPIO8, SCL = GPIO7
 
   // Init OLED
   if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS)) {
